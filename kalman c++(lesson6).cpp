@@ -133,7 +133,9 @@ void filter(VectorXd &x, MatrixXd &P) {
 
         // prediction
         x=(F*x)+u;
-        P=F*P*F.transpose();
+		
+        //P=F*P*F.transpose();
+        P=F*P*F.transpose()+Q;
         
 		
 		std::cout << "x=" << std::endl <<  x << std::endl;
