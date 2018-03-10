@@ -20,17 +20,19 @@ http://ftp.gnu.org/gnu/make/
 
 
 $ wget "http://ftp.gnu.org/gnu/make/make-3.81.tar.bz2"
+
 $ tar xjf make-3.81.tar.bz2
+
 $ cd make
 
 解凍してビルド
 tarを解凍して、configureしてmakeします。
 
-
 $ ./configure
+
 $ make
+
 パスを通す
-もとの v4.1 はそっとしておいて、Androidを扱う時だけ v3.81 を使うようにすると他に影響がなくてよいかと思います。
 単純に .profile あたりに下記のパス設定の記述を追加します。/fooとしたパス部分は環境に合わせて変更してください。
 
 
