@@ -12,8 +12,13 @@ sudo apt-get update
 
 sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev gcc-7 g++-7
 
+#############  Docker   ####################################
+https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/16cf4a78-4fc7-49e1-8621-3450ca938b77
 
-####################http://iot-watch.com/69#################
+docker run -it -p 4567:4567 -v 'pwd':/work udacity/controls_kit:latest
+
+
+############  http://iot-watch.com/69  #################
 make v3.81 のソースをダウンロード
 取得元の公式はこちらです。ここに v3.81 がありますので取得します。
 http://ftp.gnu.org/gnu/make/
