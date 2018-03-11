@@ -18,7 +18,9 @@ https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03
 docker run -it -p 4567:4567 -v 'pwd':/work udacity/controls_kit:latest
 
 
-############  http://iot-watch.com/69  #################
+############ ubuntu 14  try gcc-upgrade #############
+http://iot-watch.com/69
+
 make v3.81 のソースをダウンロード
 取得元の公式はこちらです。ここに v3.81 がありますので取得します。
 http://ftp.gnu.org/gnu/make/
