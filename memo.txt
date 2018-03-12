@@ -1,6 +1,7 @@
-docker run -it -p 4567:4567 -v 'pwd':/work udacity/controls_kit:latest /bin/bash
 
-docker run -it -p 4567:4567 -v /d/udaDock:/home/uda:rw udacity/controls_kit:latest /bin/bash
+
+docker run -it  --name test1 -p 4567:4567 -v /d/udaDock:/home/uda:rw udacity/controls_kit:latest 
+
 
 
 
@@ -9,3 +10,9 @@ git clone https://github.com/udacity/CarND-Extended-Kalman-Filter-Project.git
 
 
 docker container list
+
+
+docker cp d:/udaDock/test.txt  test1:work
+
+
+docker cp  test1:work/test.txt   d:/udaDock/test1.txt
