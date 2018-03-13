@@ -1,13 +1,11 @@
 <DockerTool-BOXを立ち上げて、マウント済みコンテナを作成する方法>
 
 
-●MinGWを起動し下記コマンドで　マウント済　test1コンテナを作成する
-docker run -it  --name test1 -p 4567:4567 -v udaDock:/home/uda:rw -v c/Users:/u:rw  udacity/controls_kit:latest 
+●MinGWを起動し下記コマンドで マウント済 test1コンテナを作成する
+docker run -it  --name test1 -p 4567:4567 -v /udaDock:/home/uda:rw -v /c/Users:/u:rw  udacity/controls_kit:latest 
 
 
 
-
-docker container list
 
 <2台のDockerTool-BOXを立ち上げて、片方を仮想Ubuntuで使用、もう片方を管理用MinGWでファイル操作する方法>
 
@@ -16,3 +14,18 @@ docker cp d:/udaDock/test.txt  test1:work
 
 
 docker cp  test1:work/test.txt   d:/udaDock/test1.txt
+
+
+★コンテナの確認
+
+docker ps -a または docker container list -a
+
+(-aオプションは停止中のコンテナも含めて一覧表示する意図）
+
+
+★コンテナの起動・接続
+docker start コンテナ名 または docker start コンテナID
+
+docker attach コンテナ名 または docker attach コンテナID
+
+
