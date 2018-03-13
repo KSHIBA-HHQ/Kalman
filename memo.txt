@@ -1,14 +1,17 @@
+<DockerTool-BOXを立ち上げて、マウント済みコンテナを作成する方法>
 
 
+●MinGWを起動し下記コマンドで　マウント済　test1コンテナを作成する
 docker run -it  --name test1 -p 4567:4567 -v udaDock:/home/uda:rw -v c/Users:/u:rw  udacity/controls_kit:latest 
 
 
-git clone https://github.com/udacity/CarND-Extended-Kalman-Filter-Project.git
 
 
 docker container list
 
+<2台のDockerTool-BOXを立ち上げて、片方を仮想Ubuntuで使用、もう片方を管理用MinGWでファイル操作する方法>
 
+●管理用MinGWで以下コマンドによりファイルの双方向更新を行う
 docker cp d:/udaDock/test.txt  test1:work
 
 
