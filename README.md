@@ -3,6 +3,10 @@
 http://www.mdpi.com/sensors/sensors-12-03049/article_deploy/html/images/sensors-12-03049f5.png
 
 
+# hint
+https://www.youtube.com/watch?v=J7WK9gEUltM&feature=youtu.be
+
+#######################################
 
 sudo add-apt-repository ppa:jonathonf/gcc-7.1
 
